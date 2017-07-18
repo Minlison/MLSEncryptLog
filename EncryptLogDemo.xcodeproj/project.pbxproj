@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F320539E1F18798400B52982 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F320539D1F18798400B52982 /* AppDelegate.m */; };
+		F32053A11F18798400B52982 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F32053A01F18798400B52982 /* main.m */; };
+		F32053A41F18798400B52982 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32053A31F18798400B52982 /* ViewController.m */; };
+		F32053A61F18798400B52982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32053A51F18798400B52982 /* Assets.xcassets */; };
+		F32053A91F18798400B52982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32053A71F18798400B52982 /* Main.storyboard */; };
+		F32053B91F18799100B52982 /* MLSEncryptLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F32053B71F18799100B52982 /* MLSEncryptLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F32053BC1F18799100B52982 /* MLSEncryptLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32053B51F18799100B52982 /* MLSEncryptLog.framework */; };
+		F32053BD1F18799100B52982 /* MLSEncryptLog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F32053B51F18799100B52982 /* MLSEncryptLog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F32053C61F1879BB00B52982 /* MLSEncryptLogConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F32053C41F1879BB00B52982 /* MLSEncryptLogConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F32053C71F1879BB00B52982 /* MLSEncryptLogConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F32053C51F1879BB00B52982 /* MLSEncryptLogConfig.m */; };
+		F32053CA1F187A2000B52982 /* MLSEncryptLogCommonPrv.h in Headers */ = {isa = PBXBuildFile; fileRef = F32053C91F187A2000B52982 /* MLSEncryptLogCommonPrv.h */; };
+		F32053CF1F188B0F00B52982 /* MLSEncryptLogFileItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F32053CD1F188B0F00B52982 /* MLSEncryptLogFileItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F32053D01F188B0F00B52982 /* MLSEncryptLogFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F32053CE1F188B0F00B52982 /* MLSEncryptLogFileItem.m */; };
+		F32053D71F1890F000B52982 /* MLSEncryptWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = F32053D51F1890F000B52982 /* MLSEncryptWriter.h */; };
+		F32053D81F1890F000B52982 /* MLSEncryptWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F32053D61F1890F000B52982 /* MLSEncryptWriter.m */; };
+		F32053DB1F18910400B52982 /* MLSEncryptReader.h in Headers */ = {isa = PBXBuildFile; fileRef = F32053D91F18910400B52982 /* MLSEncryptReader.h */; };
+		F32053DC1F18910400B52982 /* MLSEncryptReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F32053DA1F18910400B52982 /* MLSEncryptReader.m */; };
+		F32053DD1F18943800B52982 /* MLSEncryptLogCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = F32053C81F187A0B00B52982 /* MLSEncryptLogCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F32053E11F18945400B52982 /* MLSEncryptLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F32053DF1F18945400B52982 /* MLSEncryptLogManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F32053E21F18945400B52982 /* MLSEncryptLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F32053E01F18945400B52982 /* MLSEncryptLogManager.m */; };
+		F32053E91F189C8900B52982 /* MLSEnryptHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F32053E71F189C8900B52982 /* MLSEnryptHelper.h */; };
+		F32053EA1F189C8900B52982 /* MLSEnryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F32053E81F189C8900B52982 /* MLSEnryptHelper.m */; };
+		F32054071F18AF1900B52982 /* MLSEncryptFileStream.h in Headers */ = {isa = PBXBuildFile; fileRef = F32054051F18AF1900B52982 /* MLSEncryptFileStream.h */; };
+		F32054081F18AF1900B52982 /* MLSEncryptFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F32054061F18AF1900B52982 /* MLSEncryptFileStream.m */; };
+		F320540B1F18AF8000B52982 /* MLSEncryptFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F32054091F18AF8000B52982 /* MLSEncryptFileManager.h */; };
+		F320540C1F18AF8000B52982 /* MLSEncryptFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F320540A1F18AF8000B52982 /* MLSEncryptFileManager.m */; };
+		F320540F1F18B94700B52982 /* MLSEncryptAES.h in Headers */ = {isa = PBXBuildFile; fileRef = F320540D1F18B94700B52982 /* MLSEncryptAES.h */; };
+		F32054101F18B94700B52982 /* MLSEncryptAES.m in Sources */ = {isa = PBXBuildFile; fileRef = F320540E1F18B94700B52982 /* MLSEncryptAES.m */; };
+		F32054131F18B95D00B52982 /* MLSEncryptLogEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = F32054111F18B95D00B52982 /* MLSEncryptLogEncrypt.h */; };
+		F32054141F18B95D00B52982 /* MLSEncryptLogEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = F32054121F18B95D00B52982 /* MLSEncryptLogEncrypt.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F32053BA1F18799100B52982 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F32053911F18798400B52982 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F32053B41F18799100B52982;
+			remoteInfo = MLSEncryptLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F32053C11F18799100B52982 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F32053BD1F18799100B52982 /* MLSEncryptLog.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F32053991F18798400B52982 /* EncryptLogDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncryptLogDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F320539C1F18798400B52982 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F320539D1F18798400B52982 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F32053A01F18798400B52982 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F32053A21F18798400B52982 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F32053A31F18798400B52982 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F32053A51F18798400B52982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F32053A81F18798400B52982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F32053AA1F18798400B52982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32053B51F18799100B52982 /* MLSEncryptLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MLSEncryptLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32053B71F18799100B52982 /* MLSEncryptLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSEncryptLog.h; sourceTree = "<group>"; };
+		F32053B81F18799100B52982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32053C41F1879BB00B52982 /* MLSEncryptLogConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSEncryptLogConfig.h; sourceTree = "<group>"; };
+		F32053C51F1879BB00B52982 /* MLSEncryptLogConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSEncryptLogConfig.m; sourceTree = "<group>"; };
+		F32053C81F187A0B00B52982 /* MLSEncryptLogCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSEncryptLogCommon.h; sourceTree = "<group>"; };
+		F32053C91F187A2000B52982 /* MLSEncryptLogCommonPrv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSEncryptLogCommonPrv.h; sourceTree = "<group>"; };
+		F32053CD1F188B0F00B52982 /* MLSEncryptLogFileItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSEncryptLogFileItem.h; sourceTree = "<group>"; };
+		F32053CE1F188B0F00B52982 /* MLSEncryptLogFileItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSEncryptLogFileItem.m; sourceTree = "<group>"; };
+		F32053D51F1890F000B52982 /* MLSEncryptWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSEncryptWriter.h; sourceTree = "<group>"; };
+		F32053D61F1890F000B52982 /* MLSEncryptWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSEncryptWriter.m; sourceTree = "<group>"; };
+		F32053D91F18910400B52982 /* MLSEncryptReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSEncryptReader.h; sourceTree = "<group>"; };
+		F32053DA1F18910400B52982 /* MLSEncryptReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSEncryptReader.m; sourceTree = "<group>"; };
+		F32053DF1F18945400B52982 /* MLSEncryptLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSEncryptLogManager.h; sourceTree = "<group>"; };
+		F32053E01F18945400B52982 /* MLSEncryptLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSEncryptLogManager.m; sourceTree = "<group>"; };
+		F32053E71F189C8900B52982 /* MLSEnryptHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSEnryptHelper.h; sourceTree = "<group>"; };
+		F32053E81F189C8900B52982 /* MLSEnryptHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSEnryptHelper.m; sourceTree = "<group>"; };
+		F32054051F18AF1900B52982 /* MLSEncryptFileStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSEncryptFileStream.h; sourceTree = "<group>"; };
+		F32054061F18AF1900B52982 /* MLSEncryptFileStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSEncryptFileStream.m; sourceTree = "<group>"; };
+		F32054091F18AF8000B52982 /* MLSEncryptFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSEncryptFileManager.h; sourceTree = "<group>"; };
+		F320540A1F18AF8000B52982 /* MLSEncryptFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSEncryptFileManager.m; sourceTree = "<group>"; };
+		F320540D1F18B94700B52982 /* MLSEncryptAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSEncryptAES.h; sourceTree = "<group>"; };
+		F320540E1F18B94700B52982 /* MLSEncryptAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSEncryptAES.m; sourceTree = "<group>"; };
+		F32054111F18B95D00B52982 /* MLSEncryptLogEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSEncryptLogEncrypt.h; sourceTree = "<group>"; };
+		F32054121F18B95D00B52982 /* MLSEncryptLogEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSEncryptLogEncrypt.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F32053961F18798400B52982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32053BC1F18799100B52982 /* MLSEncryptLog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32053B11F18799100B52982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F32053901F18798400B52982 = {
+			isa = PBXGroup;
+			children = (
+				F320539B1F18798400B52982 /* EncryptLogDemo */,
+				F32053B61F18799100B52982 /* MLSEncryptLog */,
+				F320539A1F18798400B52982 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F320539A1F18798400B52982 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F32053991F18798400B52982 /* EncryptLogDemo.app */,
+				F32053B51F18799100B52982 /* MLSEncryptLog.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F320539B1F18798400B52982 /* EncryptLogDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F320539C1F18798400B52982 /* AppDelegate.h */,
+				F320539D1F18798400B52982 /* AppDelegate.m */,
+				F32053A21F18798400B52982 /* ViewController.h */,
+				F32053A31F18798400B52982 /* ViewController.m */,
+				F32053A51F18798400B52982 /* Assets.xcassets */,
+				F32053A71F18798400B52982 /* Main.storyboard */,
+				F32053AA1F18798400B52982 /* Info.plist */,
+				F320539F1F18798400B52982 /* Supporting Files */,
+			);
+			path = EncryptLogDemo;
+			sourceTree = "<group>";
+		};
+		F320539F1F18798400B52982 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F32053A01F18798400B52982 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F32053B61F18799100B52982 /* MLSEncryptLog */ = {
+			isa = PBXGroup;
+			children = (
+				F32053B71F18799100B52982 /* MLSEncryptLog.h */,
+				F32053C81F187A0B00B52982 /* MLSEncryptLogCommon.h */,
+				F32053DF1F18945400B52982 /* MLSEncryptLogManager.h */,
+				F32053E01F18945400B52982 /* MLSEncryptLogManager.m */,
+				F32054091F18AF8000B52982 /* MLSEncryptFileManager.h */,
+				F320540A1F18AF8000B52982 /* MLSEncryptFileManager.m */,
+				F32053CC1F187D1300B52982 /* Prv */,
+				F32053C41F1879BB00B52982 /* MLSEncryptLogConfig.h */,
+				F32053C51F1879BB00B52982 /* MLSEncryptLogConfig.m */,
+				F32054051F18AF1900B52982 /* MLSEncryptFileStream.h */,
+				F32054061F18AF1900B52982 /* MLSEncryptFileStream.m */,
+				F32053D51F1890F000B52982 /* MLSEncryptWriter.h */,
+				F32053D61F1890F000B52982 /* MLSEncryptWriter.m */,
+				F32053D91F18910400B52982 /* MLSEncryptReader.h */,
+				F32053DA1F18910400B52982 /* MLSEncryptReader.m */,
+				F32053CD1F188B0F00B52982 /* MLSEncryptLogFileItem.h */,
+				F32053CE1F188B0F00B52982 /* MLSEncryptLogFileItem.m */,
+				F32053E71F189C8900B52982 /* MLSEnryptHelper.h */,
+				F32053E81F189C8900B52982 /* MLSEnryptHelper.m */,
+				F32054111F18B95D00B52982 /* MLSEncryptLogEncrypt.h */,
+				F32054121F18B95D00B52982 /* MLSEncryptLogEncrypt.m */,
+				F320540D1F18B94700B52982 /* MLSEncryptAES.h */,
+				F320540E1F18B94700B52982 /* MLSEncryptAES.m */,
+				F32053B81F18799100B52982 /* Info.plist */,
+			);
+			path = MLSEncryptLog;
+			sourceTree = "<group>";
+		};
+		F32053CC1F187D1300B52982 /* Prv */ = {
+			isa = PBXGroup;
+			children = (
+				F32053C91F187A2000B52982 /* MLSEncryptLogCommonPrv.h */,
+			);
+			name = Prv;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F32053B21F18799100B52982 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32053D71F1890F000B52982 /* MLSEncryptWriter.h in Headers */,
+				F32053DB1F18910400B52982 /* MLSEncryptReader.h in Headers */,
+				F32053E91F189C8900B52982 /* MLSEnryptHelper.h in Headers */,
+				F320540B1F18AF8000B52982 /* MLSEncryptFileManager.h in Headers */,
+				F32053C61F1879BB00B52982 /* MLSEncryptLogConfig.h in Headers */,
+				F320540F1F18B94700B52982 /* MLSEncryptAES.h in Headers */,
+				F32053B91F18799100B52982 /* MLSEncryptLog.h in Headers */,
+				F32053E11F18945400B52982 /* MLSEncryptLogManager.h in Headers */,
+				F32054071F18AF1900B52982 /* MLSEncryptFileStream.h in Headers */,
+				F32053CA1F187A2000B52982 /* MLSEncryptLogCommonPrv.h in Headers */,
+				F32053CF1F188B0F00B52982 /* MLSEncryptLogFileItem.h in Headers */,
+				F32054131F18B95D00B52982 /* MLSEncryptLogEncrypt.h in Headers */,
+				F32053DD1F18943800B52982 /* MLSEncryptLogCommon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F32053981F18798400B52982 /* EncryptLogDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32053AD1F18798400B52982 /* Build configuration list for PBXNativeTarget "EncryptLogDemo" */;
+			buildPhases = (
+				F32053951F18798400B52982 /* Sources */,
+				F32053961F18798400B52982 /* Frameworks */,
+				F32053971F18798400B52982 /* Resources */,
+				F32053C11F18799100B52982 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F32053BB1F18799100B52982 /* PBXTargetDependency */,
+			);
+			name = EncryptLogDemo;
+			productName = EncryptLogDemo;
+			productReference = F32053991F18798400B52982 /* EncryptLogDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F32053B41F18799100B52982 /* MLSEncryptLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32053BE1F18799100B52982 /* Build configuration list for PBXNativeTarget "MLSEncryptLog" */;
+			buildPhases = (
+				F32053B01F18799100B52982 /* Sources */,
+				F32053B11F18799100B52982 /* Frameworks */,
+				F32053B21F18799100B52982 /* Headers */,
+				F32053B31F18799100B52982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLSEncryptLog;
+			productName = MLSEncryptLog;
+			productReference = F32053B51F18799100B52982 /* MLSEncryptLog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F32053911F18798400B52982 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = minlison;
+				TargetAttributes = {
+					F32053981F18798400B52982 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 694YU37J6Y;
+						ProvisioningStyle = Automatic;
+					};
+					F32053B41F18799100B52982 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 694YU37J6Y;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F32053941F18798400B52982 /* Build configuration list for PBXProject "EncryptLogDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F32053901F18798400B52982;
+			productRefGroup = F320539A1F18798400B52982 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F32053981F18798400B52982 /* EncryptLogDemo */,
+				F32053B41F18799100B52982 /* MLSEncryptLog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F32053971F18798400B52982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32053A61F18798400B52982 /* Assets.xcassets in Resources */,
+				F32053A91F18798400B52982 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32053B31F18799100B52982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F32053951F18798400B52982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32053A41F18798400B52982 /* ViewController.m in Sources */,
+				F32053A11F18798400B52982 /* main.m in Sources */,
+				F320539E1F18798400B52982 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32053B01F18799100B52982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32054101F18B94700B52982 /* MLSEncryptAES.m in Sources */,
+				F320540C1F18AF8000B52982 /* MLSEncryptFileManager.m in Sources */,
+				F32053E21F18945400B52982 /* MLSEncryptLogManager.m in Sources */,
+				F32053D01F188B0F00B52982 /* MLSEncryptLogFileItem.m in Sources */,
+				F32053C71F1879BB00B52982 /* MLSEncryptLogConfig.m in Sources */,
+				F32054141F18B95D00B52982 /* MLSEncryptLogEncrypt.m in Sources */,
+				F32053EA1F189C8900B52982 /* MLSEnryptHelper.m in Sources */,
+				F32053D81F1890F000B52982 /* MLSEncryptWriter.m in Sources */,
+				F32053DC1F18910400B52982 /* MLSEncryptReader.m in Sources */,
+				F32054081F18AF1900B52982 /* MLSEncryptFileStream.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F32053BB1F18799100B52982 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F32053B41F18799100B52982 /* MLSEncryptLog */;
+			targetProxy = F32053BA1F18799100B52982 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F32053A71F18798400B52982 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32053A81F18798400B52982 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F32053AB1F18798400B52982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F32053AC1F18798400B52982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F32053AE1F18798400B52982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 694YU37J6Y;
+				INFOPLIST_FILE = EncryptLogDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yizmh.EncryptLogDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F32053AF1F18798400B52982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 694YU37J6Y;
+				INFOPLIST_FILE = EncryptLogDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yizmh.EncryptLogDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F32053BF1F18799100B52982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 694YU37J6Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MLSEncryptLog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yizmh.MLSEncryptLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F32053C01F18799100B52982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 694YU37J6Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MLSEncryptLog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yizmh.MLSEncryptLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F32053941F18798400B52982 /* Build configuration list for PBXProject "EncryptLogDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32053AB1F18798400B52982 /* Debug */,
+				F32053AC1F18798400B52982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32053AD1F18798400B52982 /* Build configuration list for PBXNativeTarget "EncryptLogDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32053AE1F18798400B52982 /* Debug */,
+				F32053AF1F18798400B52982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32053BE1F18799100B52982 /* Build configuration list for PBXNativeTarget "MLSEncryptLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32053BF1F18799100B52982 /* Debug */,
+				F32053C01F18799100B52982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F32053911F18798400B52982 /* Project object */;
+}
